@@ -1,1 +1,1 @@
-# HYF-graduation-project
+# HYF-graduation-project : MERN stack app
