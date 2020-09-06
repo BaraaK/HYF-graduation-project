@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Launch React",
+            "type": "chrome",
+            "request": "launch",
+            "preLaunchTask": "npm: start",
+            "url": "http://localhost:3000/",
+            "webRoot": "${workspaceFolder}/frontend"
+        },
+    {
+        "name": "Attach to Chrome",
+        "port": 3000,
+        "request": "attach",
+        "type": "pwa-chrome",
+        "webRoot": "${workspaceFolder}/frontend"
+    }
+    ]
+}
