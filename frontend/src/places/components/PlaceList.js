@@ -21,12 +21,13 @@ function PlaceList(props) {
         <PlaceItem
           key={item.id}
           id={item.id}
-          image={item.imageURL}
+          image={item.image}
           title={item.title}
           description={item.description}
           address={item.address}
           createrId={item.creater}
           coordinates={item.location}
+          onDelete={props.onDeletePlace}
         />
       );
     });

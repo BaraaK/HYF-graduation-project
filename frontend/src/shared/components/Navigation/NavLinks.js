@@ -6,6 +6,7 @@ import "./NavLinks.css";
 
 function NavLinks(props) {
   const auth = useContext(AuthContext);
+  console.log(auth.userID)
 
   return (
     <ul className="nav-links">
@@ -16,7 +17,7 @@ function NavLinks(props) {
       </li>
       {auth.isLoggedIn && (
         <li>
-          <NavLink to="/1/places">MY PLACES</NavLink>
+          <NavLink to={`/${auth.userID}/places`}>MY PLACES</NavLink>
         </li>
       )}
       {auth.isLoggedIn && (
